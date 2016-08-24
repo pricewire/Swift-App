@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Mark Langlois on 8/23/16.
-//  Copyright © 2016 Mark Langlois. All rights reserved.
+//  Copyright © 2016 Mark Langlois. All rights reserved..
 //
 
 import UIKit
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         tapCount = tapCount + 1
         print(tapCount)
         
-        if tapCount >= 10 {
+        if tapCount >= 20 {
             theLabel.text = "Tapped 10 times"
         }
             }
