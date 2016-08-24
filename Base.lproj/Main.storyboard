@@ -24,22 +24,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIa-Tz-w74">
-                                <rect key="frame" x="266.5" y="69.5" width="67" height="30"/>
+                                <rect key="frame" x="266" y="69" width="67" height="30"/>
                                 <state key="normal" title="PUSH ME"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CNf-7b-80v"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-pg-wjB">
+                                <rect key="frame" x="250.5" y="108" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="tfn-ic-2uK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QsK-Tf-gcf">
+                                <rect key="frame" x="249" y="147" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="JWk-Dh-IVf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gKf-sg-9p4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2KR-2m-dbL"/>
                             <constraint firstItem="gKf-sg-9p4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="3UN-Bi-Kbx"/>
+                            <constraint firstItem="ndg-pg-wjB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5DC-9x-3tI"/>
+                            <constraint firstItem="ndg-pg-wjB" firstAttribute="top" secondItem="QIa-Tz-w74" secondAttribute="bottom" constant="9" id="dqi-SP-Hnb"/>
+                            <constraint firstItem="QsK-Tf-gcf" firstAttribute="top" secondItem="ndg-pg-wjB" secondAttribute="bottom" constant="9" id="f9p-dE-SKZ"/>
                             <constraint firstItem="QIa-Tz-w74" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fg2-q3-CJW"/>
                             <constraint firstItem="QIa-Tz-w74" firstAttribute="top" secondItem="gKf-sg-9p4" secondAttribute="bottom" constant="9" id="fjp-Em-J0G"/>
+                            <constraint firstItem="QsK-Tf-gcf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oeu-ob-WId"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="ndg-pg-wjB" id="kNW-UQ-OZ5"/>
+                        <outlet property="text2" destination="QsK-Tf-gcf" id="aeA-OY-Lh7"/>
                         <outlet property="theLabel" destination="gKf-sg-9p4" id="oEY-Mg-noB"/>
                     </connections>
                 </viewController>
